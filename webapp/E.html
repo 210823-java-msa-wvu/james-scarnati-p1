@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <style>
+    .navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+    table, th, tr, td{
+        border: 1px solid black;
+        }
+        tr:hover{background-color: white;
+        }
+        body{
+        background-color: powderblue;
+        }
+    </style>
+
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <div class="container-md">
+        <div class="navbar" id="navbar">
+            <a href="http://localhost:8080/P1/Login.html" class="active">Sign Out</a>
+            <a href="http://localhost:8080/P1/welcomepage.html">Main Menu</a>
+        </div>
+
+    </div>
+</nav>
+<form>
+    <button type="button" id="Req">See All Requests</button>
+</form>
+<br>
+<div id="table">
+
+</div>
+<h3>Course Outcome Form</h3>
+<form>
+    Enter Course Id:
+    <input type="number" id="id" required>
+    <br>
+    Enter the Final Evaluation for the Course:
+    <input type="text" id="grade">
+    <button type="button" id="setG">Submit</button>
+</form>
+<script src="E.js"></script>
+</body>
+</html>

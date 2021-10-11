@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <style>
+    .navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+    table, th, tr, td{
+        border: 1px solid black;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        width: max-content;
+        }
+        tr:hover{background-color: white;
+        }
+        body{
+        background-color: powderblue;
+        }
+    </style>
+</head>
+
+<body onload="">
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <div class="container-md">
+        <div class="navbar" id="navbar">
+            <a href="http://localhost:8080/P1/Login.html" class="active">Sign Out</a>
+            <a href="http://localhost:8080/P1/welcomepage.html">Main Menu</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <div>
+        Enter the Date the Course Starts:
+        <input type="date" id="cDate" required>
+        <br>
+        Enter the Cost of the Course:
+        <input type="number"  id="cCost" required>
+        <br>
+        Enter the Requirements to Pass:
+        <input type="text"  id="pGrade" required>
+        <br>
+        Enter How Many Hours You Will Miss from Work:
+        <input type="number"  id="hours" required>
+        <br>
+        Where is the Course Being Held:
+        <input type="text" id="location">
+        <br>
+        Why do you need this for work:
+        <input type="text" id="reason">
+        <div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>Course</th>
+                    <th>Reimbursement Percentage</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>University Course</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Seminar</td>
+                    <td>60%</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Certification Preparation Class</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Certification</td>
+                    <td>100%</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Technical Training</td>
+                    <td>90%</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Other</td>
+                    <td>30%</td>
+                </tr>
+            </table>
+            <label for="course">
+                Select the Type of Course:
+                <select id="course">
+                    <option value="1">University Course</option>
+                    <option value="2">Seminar</option>
+                    <option value="3">Certification Preparation Class</option>
+                    <option value="4">Certification</option>
+                    <option value="5">TechnicalTraining</option>
+                    <option value="6">Other</option>
+                </select>
+            </label>
+            <br>
+        <button type="button" id="req">Submit Request</button>
+        </div>
+    </div>
+
+<script src="requests.js"></script>
+</body>
+</html>
