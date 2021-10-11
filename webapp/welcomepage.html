@@ -1,0 +1,129 @@
+<!--<%@ page language = "java" contentType ="text/html; charset=UTF-8" pageEncoding ="UTF-8"%>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <style>
+    .navbar a{
+        float: left;
+        display: block;
+        color: white;
+        text-align: left;
+        padding: 14px 20px;
+        text-decoration: none;
+        }
+            .navbar p{
+        float: left;
+        display: block;
+        color: white;
+        text-align: left;
+        padding: 14px 20px;
+        text-decoration: none;
+        }
+        a.BenCo, a.DS, a.DH, a.DM {
+        display: none;
+        }
+        div.Info{
+        display:none;
+        background-color: powderblue;
+        }
+        table, th, tr, td{
+        border: 1px solid black;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 10px;
+        width: max-content;
+        }
+        tr:hover{background-color: white;
+        }
+        body{
+        background-color: powderblue;
+        }
+
+    </style>
+</head>
+
+<body>
+<nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+    <div class="container-md">
+        <div class="navbar" id="navbar">
+            <p id="Name">Welcome!</p>
+            <a href="http://localhost:8080/P1/Login.html" class="active">Sign Out</a>
+            <a id="E" class="E" href="http://localhost:8080/P1/E.html">Set Result for Course</a>
+            <a id="BenCo" class="BenCo" href="http://localhost:8080/P1/BenCo.html">Approve Requests BenCo</a>
+            <a id="DS" class="DS" href="http://localhost:8080/P1/DS.html">Approve Requests Supervisor</a>
+            <a id="DH" class="DH" href="http://localhost:8080/P1/DH.html">Approve Requests Dept. Head</a>
+            <a id="DM" class="DM" href="http://localhost:8080/P1/DM.html">Approve Requests Direct Manager</a>
+        </div>
+
+    </div>
+</nav>
+<br>
+<h4 class="edit" id="funds"> </h4>
+<h3 class="edit" id="date">  </h3>
+<br>
+<span class="edit">
+<div class="edit"> 
+    <form>
+        <button type="button" id="myFunds">See My Funds</button>
+    </form>
+</div>
+    <div class="edit">
+        <form>
+            <button type="button" id="myReq">See Current Requests</button>
+        </form>
+    </div>
+    <div class="edit">
+        <form>
+            <button type="button" id="myApp">See Approval Status</button>
+        </form>
+    </div>
+<div id="table">
+
+</div>
+<div class="edit" id="app">
+
+</div>
+
+<div class="Info" id="Info">
+<form>
+    Enter Info:
+    <input type="text" id="rInfo">
+    <br>
+    Enter Request Id:
+    <input type="number" id="rid" required>
+    <br>
+    <button type="button" id="reqInfo">Submit</button>
+</form>
+<form>
+    Enter File:
+    <input type="text" id="file">
+    <br>
+    Enter Request Id:
+    <input type="number" id="reqId" required>
+    <br>
+    <button type="button" id="reqFile">Submit</button>
+</form>
+</div>
+<div class="edit">
+    <form action="requests.html" >
+        <input type="submit" value="Create a New Request" >
+    </form>
+
+</div>
+</span>
+
+
+<script src = 'welcome.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

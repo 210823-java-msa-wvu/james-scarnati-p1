@@ -1,0 +1,99 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>dev.scarnati.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WelcomePage</servlet-name>
+        <servlet-class>dev.scarnati.servlets.WelcomepageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Requests</servlet-name>
+        <servlet-class>dev.scarnati.servlets.RequestsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Req</servlet-name>
+        <servlet-class>dev.scarnati.servlets.ReqServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BenCo</servlet-name>
+        <servlet-class>dev.scarnati.servlets.BenCoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DH</servlet-name>
+        <servlet-class>dev.scarnati.servlets.DHServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DS</servlet-name>
+        <servlet-class>dev.scarnati.servlets.DSServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>E</servlet-name>
+        <servlet-class>dev.scarnati.servlets.EmployeeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>WelcomePage2</servlet-name>
+        <servlet-class>dev.scarnati.servlets.SecondWelcomePageServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>FinalApproval</servlet-name>
+        <servlet-class>dev.scarnati.servlets.FinalApprovalServlet</servlet-class>
+    </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>FinalApproval</servlet-name>
+        <url-pattern>/fas</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>WelcomePage2</servlet-name>
+        <url-pattern>/welcomepage2</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>E</servlet-name>
+        <url-pattern>/e</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DS</servlet-name>
+        <url-pattern>/ds</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DH</servlet-name>
+        <url-pattern>/dh</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>BenCo</servlet-name>
+        <url-pattern>/benco</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Req</servlet-name>
+        <url-pattern>/req</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Requests</servlet-name>
+        <url-pattern>/requests</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>WelcomePage</servlet-name>
+        <url-pattern>/welcomepage</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
