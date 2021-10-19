@@ -39,10 +39,10 @@
   - create table approval { id serial, dsapproval boolean, denialreason varchar, dhapproval boolean, bcapproval boolean, inforequeste boolean, inforequestds boolean, inforequestdh boolean, employeeinfo varchar, dsinfo varchar, dhinfo varchar, denied boolean }
 #
 **Add courses**
-insert into courses values (1, "University Course", .8),(2, "Seminar", .6),(3, "Certification Preperation Class", .75),(4, "Certification", 1),(5, "Technical Training", .9),(6, "Other", .3)
+- insert into courses values (1, "University Course", .8),(2, "Seminar", .6),(3, "Certification Preperation Class", .75),(4, "Certification", 1),(5, "Technical Training", .9),(6, "Other", .3)
 #
 **Add Employees**
-insert into employee values (default, "Jane", "Hill", "BenCo", "pass", "Benefits Coordinator", 1000, 0, 0),(default, "Kyle", "Skor", "DS", "pass", "Direct Supervisor", 1000, 0, 0),(default, "Howard", "White", "DH", "pass", "Department Manager", 1000, 0, 0),(default, "Jaosh", "Grant", "Employee", "pass", "Employee" , 1000, 0, 0),(default, "Nathan", "Colt", "DM", "pass", "Direct Manager", 1000, 0, 0)
+- insert into employee values (default, "Jane", "Hill", "BenCo", "pass", "Benefits Coordinator", 1000, 0, 0),(default, "Kyle", "Skor", "DS", "pass", "Direct Supervisor", 1000, 0, 0),(default, "Howard", "White", "DH", "pass", "Department Manager", 1000, 0, 0),(default, "Jaosh", "Grant", "Employee", "pass", "Employee" , 1000, 0, 0),(default, "Nathan", "Colt", "DM", "pass", "Direct Manager", 1000, 0, 0)
 
 # Usage
 Once downloaded and the tables are built, all that should be neccessary to run the project is to run the program using Apache Tomcat 9 and open a browser and go to http://localhost:8080/login.html
