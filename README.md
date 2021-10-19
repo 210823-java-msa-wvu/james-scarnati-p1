@@ -37,8 +37,10 @@
   - create table requests { id serial, employeeid int, requestdate varchar, coursestart varchar, passinggrade varchar, coursecost float, reimbursementamount float, coursetype int, approval boolean, pass boolean, deny boolean, grade varchar, dmcheck boolean, file varchar, urgent boolean, hours int, location varchar, reason varchar, complete boolean }
 -create approval table:
   - create table approval { id serial, dsapproval boolean, denialreason varchar, dhapproval boolean, bcapproval boolean, inforequeste boolean, inforequestds boolean, inforequestdh boolean, employeeinfo varchar, dsinfo varchar, dhinfo varchar, denied boolean }
+#
 **Add courses**
 insert into courses values (1, "University Course", .8),(2, "Seminar", .6),(3, "Certification Preperation Class", .75),(4, "Certification", 1),(5, "Technical Training", .9),(6, "Other", .3)
+#
 **Add Employees**
 insert into employee values (default, "Jane", "Hill", "BenCo", "pass", "Benefits Coordinator", 1000, 0, 0),(default, "Kyle", "Skor", "DS", "pass", "Direct Supervisor", 1000, 0, 0),(default, "Howard", "White", "DH", "pass", "Department Manager", 1000, 0, 0),(default, "Jaosh", "Grant", "Employee", "pass", "Employee" , 1000, 0, 0),(default, "Nathan", "Colt", "DM", "pass", "Direct Manager", 1000, 0, 0)
 
