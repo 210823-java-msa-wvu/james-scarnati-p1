@@ -5,7 +5,7 @@
 - JavaScript
 - HTML
 - CSS
-- Java
+- Java 8
 - JDBC
 - Servlets
 - AJAX HTTP Requests
