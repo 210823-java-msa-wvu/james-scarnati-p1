@@ -19,6 +19,7 @@
 - Approve a request
 - Request more information from employee or supervisors
 - View requests and approval status
+#
 **Todo List**
 - Make the tabled requests selectable to make requesting information and the approval process easier
 - Implement the ability to upload a file
