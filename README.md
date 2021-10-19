@@ -36,7 +36,7 @@
   - create table courses { id serial, course varchar, reimbursementpercent float}
 - create requests table
   - create table requests { id serial, employeeid int, requestdate varchar, coursestart varchar, passinggrade varchar, coursecost float, reimbursementamount float, coursetype int, approval boolean, pass boolean, deny boolean, grade varchar, dmcheck boolean, file varchar, urgent boolean, hours int, location varchar, reason varchar, complete boolean }
--create approval table:
+- create approval table:
   - create table approval { id serial, dsapproval boolean, denialreason varchar, dhapproval boolean, bcapproval boolean, inforequeste boolean, inforequestds boolean, inforequestdh boolean, employeeinfo varchar, dsinfo varchar, dhinfo varchar, denied boolean }
 #
 **Add courses**
